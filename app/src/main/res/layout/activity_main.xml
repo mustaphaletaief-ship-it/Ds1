@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bleu_nuit"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ===== EN-TÊTE (bleu nuit) ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="40dp"
+            android:paddingBottom="28dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <ImageView
+                android:id="@+id/iv_horloge_ml"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_horloge"
+                android:contentDescription="Horloge" />
+
+            <TextView
+                android:id="@+id/tv_bureau_ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="BUREAU DES FRONTIÈRES TEMPORELLES"
+                android:textColor="@color/or_doux"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2" />
+
+            <TextView
+                android:id="@+id/tv_titre_ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Douane Temporelle"
+                android:textColor="@color/creme"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="serif" />
+        </LinearLayout>
+
+        <!-- ===== CARTE (crème) ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/bg_carte"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tv_formulaire_ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FORMULAIRE D'ENREGISTREMENT"
+                android:textColor="@color/gris_texte"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Nom -->
+            <TextView
+                android:id="@+id/tv_label_nom_ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom du voyageur"
+                android:textColor="@color/bleu_nuit"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_nom_ml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_champ"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="ex: Malek Letaief"
+                android:textColorHint="#8A8F9C"
+                android:textColor="@color/bleu_nuit"
+                android:inputType="textPersonName" />
+
+            <!-- Années (côte à côte) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="6dp">
+
+                    <TextView
+                        android:id="@+id/tv_label_naissance_ml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Année de naissance"
+                        android:textColor="@color/bleu_nuit"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_annee_naissance_ml"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_champ"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:hint="1990"
+                        android:textColorHint="#8A8F9C"
+                        android:textColor="@color/bleu_nuit"
+                        android:inputType="number"
+                        android:maxLength="4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="6dp">
+
+                    <TextView
+                        android:id="@+id/tv_label_destination_ml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Année destination"
+                        android:textColor="@color/bleu_nuit"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_annee_destination_ml"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_champ"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:hint="2050"
+                        android:textColorHint="#8A8F9C"
+                        android:textColor="@color/bleu_nuit"
+                        android:inputType="number"
+                        android:maxLength="4" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Lieu -->
+            <TextView
+                android:id="@+id/tv_label_lieu_ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Lieu de destination"
+                android:textColor="@color/bleu_nuit"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_lieu_ml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_champ"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="ex: Rome antique"
+                android:textColorHint="#8A8F9C"
+                android:textColor="@color/bleu_nuit"
+                android:inputType="text" />
+
+            <!-- Motif -->
+            <TextView
+                android:id="@+id/tv_motif_ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Motif du voyage"
+                android:textColor="@color/bleu_nuit"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_motif_ml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/rb_tourisme_ml">
+
+                <RadioButton
+                    android:id="@+id/rb_tourisme_ml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_option"
+                    android:buttonTint="@color/bleu_nuit"
+                    android:paddingStart="8dp"
+                    android:text="Tourisme"
+                    android:textColor="@color/bleu_nuit" />
+
+                <RadioButton
+                    android:id="@+id/rb_modification_ml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_option"
+                    android:buttonTint="@color/bleu_nuit"
+                    android:paddingStart="8dp"
+                    android:text="Modification du passé"
+                    android:textColor="@color/bleu_nuit" />
+
+                <RadioButton
+                    android:id="@+id/rb_fuite_ml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_option"
+                    android:buttonTint="@color/bleu_nuit"
+                    android:paddingStart="8dp"
+                    android:text="Fuite"
+                    android:textColor="@color/bleu_nuit" />
+            </RadioGroup>
+
+            <!-- Classe -->
+            <TextView
+                android:id="@+id/tv_classe_ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Classe de voyage"
+                android:textColor="@color/bleu_nuit"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_classe_ml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:checkedButton="@+id/rb_eco_ml">
+
+                <RadioButton
+                    android:id="@+id/rb_eco_ml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_option"
+                    android:buttonTint="@color/bleu_nuit"
+                    android:text="Éco"
+                    android:textColor="@color/bleu_nuit" />
+
+                <RadioButton
+                    android:id="@+id/rb_business_ml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_option"
+                    android:buttonTint="@color/bleu_nuit"
+                    android:text="Business"
+                    android:textColor="@color/bleu_nuit" />
+
+                <RadioButton
+                    android:id="@+id/rb_premiere_ml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/bg_option"
+                    android:buttonTint="@color/bleu_nuit"
+                    android:text="Première"
+                    android:textColor="@color/bleu_nuit" />
+            </RadioGroup>
+
+            <!-- Bouton (or) -->
+            <Button
+                android:id="@+id/btn_inspecter_ml"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="28dp"
+                android:text="Inspecter le profil"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/bleu_nuit"
+                android:backgroundTint="@color/or_doux"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -15,7 +15,6 @@
         android:textSize="32sp"
         android:textStyle="bold"
         android:textColor="@color/blanc_texte" />
-
     <Button
         android:id="@+id/btn_nouveau_voyageur_xx"
         android:layout_width="wrap_content"

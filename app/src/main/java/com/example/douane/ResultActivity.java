@@ -17,9 +17,9 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         // Liaison des éléments de l'interface avec leurs IDs
-        LinearLayout rootResult = findViewById(R.id.root_result_xx);
-        TextView tvMessage = findViewById(R.id.tv_message_xx);
-        Button btnNouveau = findViewById(R.id.btn_nouveau_voyageur_xx);
+        LinearLayout rootResult = findViewById(R.id.root_result_yy);
+        TextView tvMessage = findViewById(R.id.tv_message_yy);
+        Button btnNouveau = findViewById(R.id.btn_nouveau_voyageur_yy);
 
         // Récupération du verdict et du nom avec les clés construites par Cles
         // Valeur par défaut false : en cas de problème, on refuse

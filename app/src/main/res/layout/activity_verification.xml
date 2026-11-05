@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
+    <!-- taswiret el monguela  3al isar: te5ou 0.3 mel 3ordh -->
     <ImageView
         android:id="@+id/img_passeport_mg"
         android:layout_width="0dp"
@@ -17,6 +18,7 @@
         app:srcCompat="@drawable/ic_horloge"
         app:tint="#FFFFFF" />
 
+    <!-- ejiha limin: te5ou 0.7 mel 3ordh, fiha textes w les boutons -->
     <RelativeLayout
         android:id="@+id/layout_infos_mg"
         android:layout_width="0dp"
@@ -24,6 +26,99 @@
         android:layout_weight="0.7"
         android:background="#FBFAF6"
         android:padding="20dp">
+
+        <!-- el titre el passeport -->
+        <TextView
+            android:id="@+id/tv_titre_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Passeport temporel"
+            android:textColor="#16202A"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- el ma3loumet mta3 l voyageur: ta7t b3adhhom -->
+        <TextView
+            android:id="@+id/tv_nom_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_titre_mg"
+            android:layout_marginTop="16dp"
+            android:text="Nom : Sara"
+            android:textColor="#16202A"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_age_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nom_mg"
+            android:layout_marginTop="12dp"
+            android:text="Âge temporel : 60 ans"
+            android:textColor="#16202A"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_voyage_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_age_mg"
+            android:layout_marginTop="12dp"
+            android:text="Voyage : 1990 → 2050"
+            android:textColor="#16202A"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_lieu_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_voyage_mg"
+            android:layout_marginTop="12dp"
+            android:text="Lieu : Tunis"
+            android:textColor="#16202A"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_classe_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_lieu_mg"
+            android:layout_marginTop="12dp"
+            android:text="Classe : Éco"
+            android:textColor="#16202A"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_motif_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_classe_mg"
+            android:layout_marginTop="12dp"
+            android:text="Motif : Tourisme"
+            android:textColor="#16202A"
+            android:textSize="18sp" />
+
+        <!-- bouton refuser: louta,e5er el écran -->
+        <Button
+            android:id="@+id/btn_refuser_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#B3261E"
+            android:text="Refuser (Risque de paradoxe)"
+            android:textColor="#FFFFFF" />
+
+        <!-- bouton approuver: fou9 bouton refuser -->
+        <Button
+            android:id="@+id/btn_approuver_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_refuser_mg"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#1B7A4B"
+            android:text="Approuver le saut temporel"
+            android:textColor="#FFFFFF" />
 
     </RelativeLayout>
 

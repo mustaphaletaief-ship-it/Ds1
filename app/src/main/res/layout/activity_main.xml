@@ -88,7 +88,7 @@
                 android:background="@drawable/bg_champ"
                 android:paddingStart="14dp"
                 android:paddingEnd="14dp"
-                android:hint="ex: Adolf Hitler"
+                android:hint="ex: Maria Atta"
                 android:textColorHint="#8A8F9C"
                 android:textColor="@color/bleu_nuit"
                 android:inputType="textPersonName" />

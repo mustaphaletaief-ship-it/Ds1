@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- ===== EN-TÊTE (bleu nuit) ===== -->
+        <!-- ===== first layout ===== -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,14 +21,12 @@
             android:paddingBottom="28dp"
             android:paddingStart="24dp"
             android:paddingEnd="24dp">
-
             <ImageView
                 android:id="@+id/iv_horloge_ml"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
                 android:src="@drawable/ic_horloge"
                 android:contentDescription="Horloge" />
-
             <TextView
                 android:id="@+id/tv_bureau_ml"
                 android:layout_width="wrap_content"
@@ -39,7 +37,6 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:letterSpacing="0.2" />
-
             <TextView
                 android:id="@+id/tv_titre_ml"
                 android:layout_width="wrap_content"
@@ -52,7 +49,7 @@
                 android:fontFamily="serif" />
         </LinearLayout>
 
-        <!-- ===== CARTE (crème) ===== -->
+        <!-- ===== second layout ===== -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -72,7 +69,7 @@
                 android:letterSpacing="0.08"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Nom -->
+            <!-- Nom du voyageur -->
             <TextView
                 android:id="@+id/tv_label_nom_ml"
                 android:layout_width="wrap_content"
@@ -91,12 +88,12 @@
                 android:background="@drawable/bg_champ"
                 android:paddingStart="14dp"
                 android:paddingEnd="14dp"
-                android:hint="ex: Malek Letaief"
+                android:hint="ex: Adolf Hitler"
                 android:textColorHint="#8A8F9C"
                 android:textColor="@color/bleu_nuit"
                 android:inputType="textPersonName" />
 
-            <!-- Années (côte à côte) -->
+            <!-- Années (naissance et destination) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -188,7 +185,7 @@
                 android:background="@drawable/bg_champ"
                 android:paddingStart="14dp"
                 android:paddingEnd="14dp"
-                android:hint="ex: Rome antique"
+                android:hint="ex: Berlin"
                 android:textColorHint="#8A8F9C"
                 android:textColor="@color/bleu_nuit"
                 android:inputType="text" />

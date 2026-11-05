@@ -5,4 +5,7 @@
     <color name="creme">#F6F1E7</color>
     <color name="beige_bord">#D6CDB8</color>
     <color name="gris_texte">#5B6478</color>
+    <color name="vert_approuve">#2E7D32</color>
+    <color name="rouge_refuse">#C62828</color>
+    <color name="blanc_texte">#FFFFFF</color>
 </resources>

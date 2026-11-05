@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Douane</string>
+    <string name="msg_approuve">Bon voyage %1$s</string>
+    <string name="msg_refuse">%1$s est en état d\'arrestation temporelle</string>
+    <string name="btn_nouveau_voyageur">Nouveau voyageur</string>
+    <string name="nom_inconnu">Voyageur inconnu</string>
 </resources>

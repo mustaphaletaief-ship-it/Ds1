@@ -32,16 +32,6 @@ public class Cles {
         return cle(matricule, "MOTIF");
     }
 
-    // el clé mta3 el classe (Éco, Business, Première)
-    public static String cleClasse(String matricule) {
-        return cle(matricule, "CLASSE");
-    }
-
-    // el clé mta3 el blasa elli bech yemchilha
-    public static String cleLieu(String matricule) {
-        return cle(matricule, "LIEU");
-    }
-
     // el clé mta3 el verdict (approuvé wala refusé) - yesta3melha el activité 2 w 3
     public static String cleVerdict(String matricule) {
         return cle(matricule, "VERDICT");

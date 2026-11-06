@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-
+import android.widget.ImageView;
 public class ResultActivity extends AppCompatActivity {
 
     @Override
@@ -20,6 +20,7 @@ public class ResultActivity extends AppCompatActivity {
         LinearLayout rootResult = findViewById(R.id.root_result_yy);
         TextView tvMessage = findViewById(R.id.tv_message_yy);
         Button btnNouveau = findViewById(R.id.btn_nouveau_voyageur_yy);
+        ImageView ivIcone = findViewById(R.id.iv_icone_yy);
 
         // 2. Jebna el verdict w el esm b nafs les cles elli mawjoudin fi classe Cles
         // 3. 5allina el valeur par defaut false, yaani ken tsir ay ghalta, el resultat yetrefdha
@@ -35,10 +36,12 @@ public class ResultActivity extends AppCompatActivity {
         // 5. Baddalna el fond w el message 7asb el verdict
         if (verdict) {
             // Ma9boul : fond a5dher w message "Bon voyage"
+            ivIcone.setImageResource(R.drawable.ic_verdict_ok_yy);
             rootResult.setBackgroundColor(ContextCompat.getColor(this, R.color.vert_approuve));
             tvMessage.setText(getString(R.string.msg_approuve, nom));
         } else {
             // Marfoudh : fond a7mer w message "El i3ti9al ezzamni"
+            ivIcone.setImageResource(R.drawable.ic_verdict_non_yy);
             rootResult.setBackgroundColor(ContextCompat.getColor(this, R.color.rouge_refuse));
             tvMessage.setText(getString(R.string.msg_refuse, nom));
         }

@@ -10,10 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 // el activité 2: taffichi el passeport w tab3ath el verdict lel activité 3
 public class VerificationActivity extends AppCompatActivity {
 
-    // el motif elli ynajjem ya3mel paradoxe eli howa mochkol
+    // el motif elli ynajjem ya3mel paradoxe
     private static final String MOTIF_PARADOXE = "Modification du passé";
 
-    // nkhallio el esm hnee bech nab3thouh ba3d lel activité 3
+    // nkhalliw el esm hnee bech nab3thouh ba3d lel activité 3
     private String nom;
 
     @Override
@@ -23,7 +23,7 @@ public class VerificationActivity extends AppCompatActivity {
         // nwarriw el interface mta3 el passeport
         setContentView(R.layout.activity_verification);
 
-        //  njibou el données elli ba3thet-hom el activité 1
+        //njibou el données elli ba3thet-hom el activité 1
         Intent intentRecu = getIntent();
         nom = intentRecu.getStringExtra(Cles.cleNom(Cles.MATRICULE));
         int naissance = intentRecu.getIntExtra(Cles.cleAnneeNaissance(Cles.MATRICULE), 0);
@@ -35,7 +35,7 @@ public class VerificationActivity extends AppCompatActivity {
         // ne7sbou el âge temporel
         int ageTemporel = destination - naissance;
 
-        // njibou el TextView mel layout
+        //njibou el TextView mel layout
         TextView tvNom = findViewById(R.id.tv_nom_mg);
         TextView tvAge = findViewById(R.id.tv_age_mg);
         TextView tvVoyage = findViewById(R.id.tv_voyage_mg);
@@ -51,15 +51,27 @@ public class VerificationActivity extends AppCompatActivity {
         tvClasse.setText("Classe : " + classe);
         tvMotif.setText("Motif : " + motif);
 
-        //njibou el zouz boutonet
+        //njibou el zouz boutons
         Button btnApprouver = findViewById(R.id.btn_approuver_mg);
         Button btnRefuser = findViewById(R.id.btn_refuser_mg);
 
-        // el paradoxe: nsakkrou bouton Approuver
+        //el règle mta3 el paradoxe: nsakkrou bouton Approuver
         if (MOTIF_PARADOXE.equals(motif) && estPremier(Math.abs(ageTemporel))) {
             btnApprouver.setEnabled(false);
             btnApprouver.setAlpha(0.5f);
         }
+
+        //kol bouton yab3ath verdict lel activité 3
+        btnApprouver.setOnClickListener(v -> envoyerVerdict(true));
+        btnRefuser.setOnClickListener(v -> envoyerVerdict(false));
+    }
+
+    // tab3ath el verdict wel esm lel activité 3 b intent explicite
+    private void envoyerVerdict(boolean verdict) {
+        Intent intent = new Intent(VerificationActivity.this, ResultActivity.class);
+        intent.putExtra(Cles.cleVerdict(Cles.MATRICULE), verdict);
+        intent.putExtra(Cles.cleNom(Cles.MATRICULE), nom);
+        startActivity(intent);
     }
 
     // traja3 true ken el nombre premier

@@ -24,7 +24,6 @@ public class VerificationActivity extends AppCompatActivity {
         nom = intentRecu.getStringExtra(Cles.cleNom(Cles.MATRICULE));
         int naissance = intentRecu.getIntExtra(Cles.cleAnneeNaissance(Cles.MATRICULE), 0);
         int destination = intentRecu.getIntExtra(Cles.cleAnneeDestination(Cles.MATRICULE), 0);
-        String lieu = intentRecu.getStringExtra(Cles.cleLieu(Cles.MATRICULE));
         String motif = intentRecu.getStringExtra(Cles.cleMotif(Cles.MATRICULE));
         String classe = intentRecu.getStringExtra(Cles.cleClasse(Cles.MATRICULE));
 
@@ -43,7 +42,6 @@ public class VerificationActivity extends AppCompatActivity {
         tvNom.setText("Nom : " + nom);
         tvAge.setText("Âge temporel : " + ageTemporel + " ans");
         tvVoyage.setText("Voyage : " + naissance + " → " + destination);
-        tvLieu.setText("Lieu : " + lieu);
         tvClasse.setText("Classe : " + classe);
         tvMotif.setText("Motif : " + motif);
     }

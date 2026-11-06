@@ -5,12 +5,10 @@
     android:layout_height="match_parent"
     android:background="@color/bleu_nuit"
     android:fillViewport="true">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
         <!-- ===== first layout ===== -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,7 +46,6 @@
                 android:textStyle="bold"
                 android:fontFamily="serif" />
         </LinearLayout>
-
         <!-- ===== second layout ===== -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -192,7 +189,6 @@
                     android:paddingStart="8dp"
                     android:text="Tourisme"
                     android:textColor="@color/bleu_nuit" />
-
                 <RadioButton
                     android:id="@+id/rb_modification_ml"
                     android:layout_width="match_parent"
@@ -204,7 +200,6 @@
                     android:paddingStart="8dp"
                     android:text="Modification du passé"
                     android:textColor="@color/bleu_nuit" />
-
                 <RadioButton
                     android:id="@+id/rb_fuite_ml"
                     android:layout_width="match_parent"
@@ -217,7 +212,77 @@
                     android:text="Fuite"
                     android:textColor="@color/bleu_nuit" />
             </RadioGroup>
+            <!-- Classe : titre + bouton info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
 
+                <TextView
+                    android:id="@+id/tv_classe_ml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Classe de voyage"
+                    android:textColor="@color/bleu_nuit"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btn_info_classe_ml"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_dialog_info"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Infos sur les classes" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_classe_ml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:checkedButton="@+id/rb_eco_ml">
+
+                <RadioButton
+                    android:id="@+id/rb_eco_ml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_option"
+                    android:buttonTint="@color/bleu_nuit"
+                    android:text="Éco"
+                    android:textColor="@color/bleu_nuit" />
+
+                <RadioButton
+                    android:id="@+id/rb_business_ml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_option"
+                    android:buttonTint="@color/bleu_nuit"
+                    android:text="Business"
+                    android:textColor="@color/bleu_nuit" />
+
+                <RadioButton
+                    android:id="@+id/rb_premiere_ml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/bg_option"
+                    android:buttonTint="@color/bleu_nuit"
+                    android:text="Première"
+                    android:textColor="@color/bleu_nuit" />
+            </RadioGroup>
             <!-- Bouton (or) -->
             <Button
                 android:id="@+id/btn_inspecter_ml"

@@ -5,20 +5,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp">
+    android:padding="32dp">
+
+    <!-- icône: ✓ wala ✕ 7asb el verdict -->
+    <ImageView
+        android:id="@+id/iv_icone_yy"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:contentDescription="Icône du verdict"
+        android:src="@drawable/ic_verdict_ok_yy" />
 
     <TextView
         android:id="@+id/tv_message_yy"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:gravity="center"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:textColor="@color/blanc_texte" />
+        android:textColor="@color/blanc_texte"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/btn_nouveau_voyageur_yy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/btn_nouveau_voyageur" />
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/blanc_texte"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="@string/btn_nouveau_voyageur"
+        android:textColor="#16202A" />
 </LinearLayout>

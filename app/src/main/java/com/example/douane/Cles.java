@@ -4,8 +4,8 @@ package com.example.douane;
 // (el groupe lkol yesta3mel nafs el classe)
 public class Cles {
 
-    // e5er 4 ar9am mel carte d'étudiant (baddelha bel matricule el s7i7)
-    public static final String MATRICULE = "1234";
+    // e5er 4 ar9am mel carte d'étudiant ( 7attit ee5er 4 ar9am ml cin 5ater carte etudiant mafiheech code)
+    public static final String MATRICULE = "0156";
 
     // tbni el clé: matricule + "_" + esm el donnée
     private static String cle(String matricule, String nom) {

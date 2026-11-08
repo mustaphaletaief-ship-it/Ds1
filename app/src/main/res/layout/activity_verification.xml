@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <!-- taswiret el monguela  3al isar: te5ou 0.3 mel 3ordh -->
+    <!-- taswiret el monguela  3a lisar: te5ou 0.3 mel 3ordh -->
     <ImageView
         android:id="@+id/img_passeport_mg"
         android:layout_width="0dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/ic_horloge"
         app:tint="#FFFFFF" />
 
-    <!-- ejiha limin: te5ou 0.7 mel 3ordh, fiha textes w les boutons -->
+    <!-- jiha limin: te5ou 0.7 mel 3ordh, fiha textes w boutonet -->
     <RelativeLayout
         android:id="@+id/layout_infos_mg"
         android:layout_width="0dp"
@@ -27,7 +27,7 @@
         android:background="#FBFAF6"
         android:padding="20dp">
 
-        <!-- el titre el passeport -->
+        <!--titre el passeport -->
         <TextView
             android:id="@+id/tv_titre_mg"
             android:layout_width="match_parent"
@@ -38,7 +38,7 @@
             android:textSize="22sp"
             android:textStyle="bold" />
 
-        <!-- el ma3loumet mta3 l voyageur: ta7t b3adhhom -->
+        <!-- ma3loumet l voyageur: ta7t b3adhhom -->
         <TextView
             android:id="@+id/tv_nom_mg"
             android:layout_width="match_parent"
@@ -119,6 +119,21 @@
             android:backgroundTint="#1B7A4B"
             android:text="Approuver le saut temporel"
             android:textColor="#FFFFFF" />
+
+        <!-- message el paradoxe: m5obbi, yodhhor ken fama paradoxe -->
+        <TextView
+            android:id="@+id/tv_alerte_mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_approuver_mg"
+            android:layout_marginBottom="12dp"
+            android:background="#FBE9E7"
+            android:padding="12dp"
+            android:text="Risque de paradoxe : 13 est un nombre premier."
+            android:textColor="#8C1D18"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
 
     </RelativeLayout>
 

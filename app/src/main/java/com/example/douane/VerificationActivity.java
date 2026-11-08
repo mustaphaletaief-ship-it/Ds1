@@ -39,7 +39,6 @@ public class VerificationActivity extends AppCompatActivity {
         TextView tvNom = findViewById(R.id.tv_nom_mg);
         TextView tvAge = findViewById(R.id.tv_age_mg);
         TextView tvVoyage = findViewById(R.id.tv_voyage_mg);
-        TextView tvLieu = findViewById(R.id.tv_lieu_mg);
         TextView tvClasse = findViewById(R.id.tv_classe_mg);
         TextView tvMotif = findViewById(R.id.tv_motif_mg);
 

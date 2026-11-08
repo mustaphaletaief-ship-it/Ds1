@@ -70,20 +70,10 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/tv_lieu_mg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_voyage_mg"
-            android:layout_marginTop="12dp"
-            android:text="Lieu : Tunis"
-            android:textColor="#16202A"
-            android:textSize="18sp" />
-
-        <TextView
             android:id="@+id/tv_classe_mg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_lieu_mg"
+            android:layout_below="@id/tv_voyage_mg"
             android:layout_marginTop="12dp"
             android:text="Classe : Éco"
             android:textColor="#16202A"

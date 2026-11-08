@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -53,10 +54,15 @@ public class VerificationActivity extends AppCompatActivity {
         Button btnApprouver = findViewById(R.id.btn_approuver_mg);
         Button btnRefuser = findViewById(R.id.btn_refuser_mg);
 
-        //el règle mta3 el paradoxe: nsakkrou bouton Approuver
+        //wa9tech 3anna paradoxe: nsakkrou bouton Approuver
         if (MOTIF_PARADOXE.equals(motif) && estPremier(Math.abs(ageTemporel))) {
             btnApprouver.setEnabled(false);
             btnApprouver.setAlpha(0.5f);
+
+            // affichage message mta3 el paradoxe m3a e sbab
+            TextView tvAlerte = findViewById(R.id.tv_alerte_mg);
+            tvAlerte.setText("Risque de paradoxe : " + Math.abs(ageTemporel) + " est un nombre premier.");
+            tvAlerte.setVisibility(View.VISIBLE);
         }
 
         //kol bouton yab3ath verdict lel activité 3

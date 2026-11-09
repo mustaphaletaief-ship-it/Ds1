@@ -1,9 +1,9 @@
 # Douane Temporelle : Time Travel Customs
 
-![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
-![Language](https://img.shields.io/badge/Language-Java-ED8B00?logo=openjdk&logoColor=white)
-![Build](https://img.shields.io/badge/Build-Gradle-02303A?logo=gradle&logoColor=white)
-![Course](https://img.shields.io/badge/Course-Programmation%20Mobile-1F3A5F)
+[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](#stack-technique)
+[![Language](https://img.shields.io/badge/Language-Java-ED8B00?logo=openjdk&logoColor=white)](#stack-technique)
+[![Build](https://img.shields.io/badge/Build-Gradle-02303A?logo=gradle&logoColor=white)](#stack-technique)
+[![Course](https://img.shields.io/badge/Course-Programmation%20Mobile-1F3A5F)](#aperçu)
 
 **Douane Temporelle** est une application Android qui simule un poste de douane pour les voyageurs du temps. Le voyageur remplit un formulaire d'enregistrement, un agent inspecte son "passeport temporel" et rend un verdict : saut temporel **approuvé** ou **refusé** (risque de paradoxe).
 

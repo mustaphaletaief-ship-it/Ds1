@@ -56,24 +56,28 @@ Le voyageur du temps arrive au poste de douane :
 
 Deux scénarios de démonstration illustrent le parcours de l'application.
 
-### Scénario 1
+### Scénario 1 : refus automatique (risque de paradoxe)
+
+Le voyageur saisit une naissance en 2005 et une destination en 2002, avec le motif **« Modification du passé »** et la classe **Éco**. Un bouton d'aide affiche la fenêtre explicative des classes de voyage. Sur l'écran passeport, l'âge temporel est de -3 ans et l'application signale un risque de paradoxe : la différence de 3 ans est un **nombre premier**. Le bouton **Approuver** est donc désactivé et seul le refus est possible. Le verdict s'affiche sur un fond **rouge**.
 
 <table>
   <tr>
     <td align="center"><b>1. Formulaire</b></td>
-    <td align="center"><b>2. Choix du motif</b></td>
+    <td align="center"><b>2. Aide sur les classes</b></td>
     <td align="center"><b>3. Passeport</b></td>
     <td align="center"><b>4. Verdict</b></td>
   </tr>
   <tr>
     <td><img src="screenshots/scenario1.1.png" width="180" alt="Scénario 1 : formulaire"/></td>
-    <td><img src="screenshots/scenario1.2.png" width="180" alt="Scénario 1 : choix du motif"/></td>
+    <td><img src="screenshots/scenario1.2.png" width="180" alt="Scénario 1 : aide sur les classes"/></td>
     <td><img src="screenshots/scenario1.3.png" width="180" alt="Scénario 1 : passeport"/></td>
     <td><img src="screenshots/scenario1.4.png" width="180" alt="Scénario 1 : verdict"/></td>
   </tr>
 </table>
 
-### Scénario 2
+### Scénario 2 : refus décidé par l'agent
+
+Le voyageur saisit une naissance en 2005 et une destination en 2050, avec le motif **« Fuite »** et la classe **Business**. Le passeport affiche un âge temporel de 45 ans et aucun paradoxe n'est détecté : les deux boutons restent actifs. L'agent choisit tout de même **« Refuser »** et le verdict s'affiche sur un fond **rouge**. Le bouton « Nouveau voyageur » permet ensuite de revenir au formulaire vide.
 
 <table>
   <tr>

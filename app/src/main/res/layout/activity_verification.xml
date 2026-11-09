@@ -12,11 +12,10 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.3"
-        android:background="#16324F"
+        android:background="@color/vert_passeport"
         android:contentDescription="Image du passeport"
         android:padding="16dp"
-        app:srcCompat="@drawable/ic_horloge"
-        app:tint="#FFFFFF" />
+        app:srcCompat="@drawable/ic_horloge" />
 
     <!-- jiha limin: te5ou 0.7 mel 3ordh, fiha textes w boutonet -->
     <RelativeLayout
@@ -24,7 +23,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.7"
-        android:background="#FBFAF6"
+        android:background="@color/creme"
         android:padding="20dp">
 
         <!--titre el passeport -->
@@ -33,20 +32,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
+            android:fontFamily="serif"
             android:text="Passeport temporel"
-            android:textColor="#16202A"
+            android:textColor="@color/vert_nuit"
             android:textSize="22sp"
             android:textStyle="bold" />
+
+        <!-- 5at dhahbi sghir ta7t el titre -->
+        <View
+            android:id="@+id/barre_titre_mg"
+            android:layout_width="48dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/tv_titre_mg"
+            android:layout_marginTop="6dp"
+            android:background="@color/or_doux" />
 
         <!-- ma3loumet l voyageur: ta7t b3adhhom -->
         <TextView
             android:id="@+id/tv_nom_mg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_titre_mg"
-            android:layout_marginTop="16dp"
+            android:layout_below="@id/barre_titre_mg"
+            android:layout_marginTop="14dp"
             android:text="Nom : Sara"
-            android:textColor="#16202A"
+            android:textColor="@color/encre"
             android:textSize="18sp" />
 
         <TextView
@@ -56,7 +65,7 @@
             android:layout_below="@id/tv_nom_mg"
             android:layout_marginTop="12dp"
             android:text="Âge temporel : 60 ans"
-            android:textColor="#16202A"
+            android:textColor="@color/encre"
             android:textSize="18sp" />
 
         <TextView
@@ -66,7 +75,7 @@
             android:layout_below="@id/tv_age_mg"
             android:layout_marginTop="12dp"
             android:text="Voyage : 1990 → 2050"
-            android:textColor="#16202A"
+            android:textColor="@color/encre"
             android:textSize="18sp" />
 
         <TextView
@@ -76,7 +85,7 @@
             android:layout_below="@id/tv_voyage_mg"
             android:layout_marginTop="12dp"
             android:text="Classe : Éco"
-            android:textColor="#16202A"
+            android:textColor="@color/encre"
             android:textSize="18sp" />
 
         <TextView
@@ -86,7 +95,7 @@
             android:layout_below="@id/tv_classe_mg"
             android:layout_marginTop="12dp"
             android:text="Motif : Tourisme"
-            android:textColor="#16202A"
+            android:textColor="@color/encre"
             android:textSize="18sp" />
 
         <!-- bouton refuser: louta,e5er el écran -->
@@ -95,9 +104,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:backgroundTint="#B3261E"
+            android:backgroundTint="@color/rouge_refuse"
             android:text="Refuser (Risque de paradoxe)"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/blanc_texte" />
 
         <!-- bouton approuver: fou9 bouton refuser -->
         <Button
@@ -106,9 +115,9 @@
             android:layout_height="wrap_content"
             android:layout_above="@id/btn_refuser_mg"
             android:layout_marginBottom="8dp"
-            android:backgroundTint="#1B7A4B"
+            android:backgroundTint="@color/vert_approuve"
             android:text="Approuver le saut temporel"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/blanc_texte" />
 
         <!-- message el paradoxe: m5obbi, yodhhor ken fama paradoxe -->
         <TextView
@@ -117,10 +126,10 @@
             android:layout_height="wrap_content"
             android:layout_above="@id/btn_approuver_mg"
             android:layout_marginBottom="12dp"
-            android:background="#FBE9E7"
+            android:background="@color/alerte_fond"
             android:padding="12dp"
             android:text="Risque de paradoxe : 13 est un nombre premier."
-            android:textColor="#8C1D18"
+            android:textColor="@color/alerte_texte"
             android:textSize="14sp"
             android:textStyle="bold"
             android:visibility="gone" />

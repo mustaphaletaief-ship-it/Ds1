@@ -1,19 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- montre à gousset dhahbia: el 3alla, el boîtier, el cadran wel 3a9arib -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="44dp"
-    android:height="44dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
+    android:width="48dp"
+    android:height="62dp"
+    android:viewportWidth="200"
+    android:viewportHeight="260">
+
+    <!-- 1. el 7al9a elli fou9 -->
     <path
-        android:pathData="M3,12a9,9 0,1 0,18 0a9,9 0,1 0,-18 0"
+        android:pathData="M81,30 a19,19 0 1,0 38,0 a19,19 0 1,0 -38,0"
         android:strokeColor="@color/or_doux"
-        android:strokeWidth="1.5"
-        android:fillColor="#00000000" />
+        android:strokeWidth="7" />
+
+    <!-- 2. el couronne elli tdawwer biha el montre -->
     <path
-        android:pathData="M12,7v5l3,2"
-        android:strokeColor="@color/or_doux"
-        android:strokeWidth="1.5"
+        android:pathData="M92,47 h16 a5,5 0 0,1 5,5 v12 a5,5 0 0,1 -5,5 h-16 a5,5 0 0,1 -5,-5 v-12 a5,5 0 0,1 5,-5 z"
+        android:fillColor="@color/or_doux"
+        android:strokeColor="#8E6F12"
+        android:strokeWidth="1.5" />
+    <path
+        android:pathData="M92,50 v16 M97,50 v16 M103,50 v16 M108,50 v16"
+        android:strokeColor="#8E6F12"
+        android:strokeWidth="1.2" />
+
+    <!-- 3. el boîtier el dhahbi w lam3a sghira -->
+    <path
+        android:pathData="M8,160 a92,92 0 1,0 184,0 a92,92 0 1,0 -184,0 z"
+        android:fillColor="@color/or_doux"
+        android:strokeColor="#8E6F12"
+        android:strokeWidth="3" />
+    <path
+        android:pathData="M18.25,130.2 A87,87 0 0,1 63.2,81.2"
+        android:strokeColor="#73FFFFFF"
         android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:fillColor="#00000000" />
+        android:strokeWidth="4" />
+    <path
+        android:pathData="M19,160 a81,81 0 1,0 162,0 a81,81 0 1,0 -162,0 z"
+        android:fillColor="#E8CD6A"
+        android:strokeColor="#8E6F12"
+        android:strokeWidth="1.5" />
+
+    <!-- 4. el cadran el abyadh -->
+    <path
+        android:pathData="M27,160 a73,73 0 1,0 146,0 a73,73 0 1,0 -146,0 z"
+        android:fillColor="#FBF8EE"
+        android:strokeColor="#8E6F12"
+        android:strokeWidth="1.5" />
+    <path
+        android:pathData="M32,160 a68,68 0 1,0 136,0 a68,68 0 1,0 -136,0"
+        android:strokeColor="@color/encre"
+        android:strokeWidth="1" />
+
+    <!-- 5. 3alamet el 12 sa3a: 12, 3, 6, 9 akbar -->
+    <path
+        android:pathData="M100,112 L100,94 M148,160 L166,160 M100,208 L100,226 M52,160 L34,160"
+        android:strokeColor="@color/encre"
+        android:strokeWidth="5" />
+    <path
+        android:pathData="M127,113.23 L133,102.84 M146.77,133 L157.16,127 M146.77,187 L157.16,193 M127,206.77 L133,217.16 M73,206.77 L67,217.16 M53.23,187 L42.84,193 M53.23,133 L42.84,127 M73,113.23 L67,102.84"
+        android:strokeColor="@color/encre"
+        android:strokeWidth="3" />
+
+    <!-- 6. el 3a9arib: el sa3a 3al 10 wel d9i9a 3al 2 -->
+    <path
+        android:pathData="M100,160 L75.8,146"
+        android:strokeColor="@color/encre"
+        android:strokeLineCap="round"
+        android:strokeWidth="6" />
+    <path
+        android:pathData="M100,160 L136.4,139"
+        android:strokeColor="@color/encre"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.5" />
+    <path
+        android:pathData="M95,160 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 z"
+        android:fillColor="@color/encre" />
+    <path
+        android:pathData="M98,160 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 z"
+        android:fillColor="@color/or_doux" />
 </vector>

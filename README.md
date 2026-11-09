@@ -1,10 +1,5 @@
 # Douane Temporelle : Time Travel Customs
 
-[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](#stack-technique)
-[![Language](https://img.shields.io/badge/Language-Java-ED8B00?logo=openjdk&logoColor=white)](#stack-technique)
-[![Build](https://img.shields.io/badge/Build-Gradle-02303A?logo=gradle&logoColor=white)](#stack-technique)
-[![Course](https://img.shields.io/badge/Course-Programmation%20Mobile-1F3A5F)](#aperçu)
-
 **Douane Temporelle** est une application Android qui simule un poste de douane pour les voyageurs du temps. Le voyageur remplit un formulaire d'enregistrement, un agent inspecte son "passeport temporel" et rend un verdict : saut temporel **approuvé** ou **refusé** (risque de paradoxe).
 
 Projet réalisé dans le cadre du mini-projet **DS 1** du cours **Programmation Mobile** (3ème année Licence BI, FSEGT), encadré par **M. Nidhal Jelassi**.
@@ -227,24 +222,25 @@ Ds1/
 
 ## Branches Git
 
+Branches présentes sur GitHub :
+
 | Branche | Rôle |
 |---|---|
 | `master` | Branche principale : version intégrée du projet |
 | `activite1-ameliorations` | Améliorations de l'Activité 1 (design, retrait de champs) |
 | `activite2` | Travail de l'Activité 2 |
-| `feature/suppression-lieu` | Activité 2 : suppression du lieu retiré du formulaire |
 | `feature/verification-layout` | Activité 2 : structure du layout et du passeport |
 | `feature/verification-logic` | Activité 2 : logique (âge, nombre premier, boutons) |
-| `feature/matricule` | Définition du matricule dans `Cles.java` |
-| `feature/message-paradoxe` | Message lié au paradoxe |
+| `feature/message-paradoxe` | Activité 2 : affichage du message et de la cause du paradoxe |
+| `feature/suppression-lieu` | Activité 2 : suppression du lieu retiré du formulaire |
+| `feature/matricule` | Remplacement du matricule dans les clés des `putExtra` |
 | `activite3` | Travail de l'Activité 3 |
-| `feature/result-layout` | Activité 3 : layout de `ResultActivity` |
-| `feature/result-colors-strings` | Activité 3 : couleurs vert/rouge et textes du verdict |
-| `feature/result-logique` | Activité 3 : lecture du verdict et affichage du résultat |
-| `feature/result-manifest` | Activité 3 : déclaration de `ResultActivity` dans le manifeste |
-| `feature/result-ids-initiales` | Activité 3 : IDs avec initiales |
-| `feature/result-commentaires-arabizi` | Activité 3 : commentaires de code |
 | `feature/readme-badges` | README : badges (finalement retirés) |
+
+> Les branches `feature/result-*` de l'Activité 3 (layout, couleurs et textes, logique, manifeste, IDs avec initiales, commentaires) ont été fusionnées dans `activite3`, puis supprimées de GitHub.
+
+---
+
 ## Démarrage rapide
 
 ### Prérequis
@@ -288,38 +284,116 @@ Puis dans Android Studio : **File, Open**, sélectionner le dossier `Ds1`, atten
 
 ## Workflow Git
 
+### Branches de travail de chaque membre
+
+| Membre | Branche d'activité | Branches de fonctionnalité |
+|---|---|---|
+| **Mustapha Letaief** (Act. 1) | `activite1-ameliorations` | améliorations du design, retrait de champs |
+| **Melek Gazzeh** (Act. 2) | `activite2` | `feature/verification-layout`, `feature/verification-logic`, `feature/message-paradoxe`, `feature/suppression-lieu` |
+| **Yasmine Yakoudi** (Act. 3) | `activite3` | `feature/result-*` (fusionnées puis supprimées) |
+| Commun | `master` | `feature/matricule` (matricule dans les clés des `putExtra`) |
+
+### Cycle de travail commun
+
 ```powershell
-# Vérifier l'état et les nouveautés
+# 1. Vérifier l'état et récupérer les nouveautés
 git status
 git fetch --all --prune
 
-# Mettre master à jour
+# 2. Mettre master à jour
 git checkout master
 git pull origin master
 
-# Travailler sur sa branche d'activité
+# 3. Retourner sur sa branche d'activité et y intégrer master
+git checkout <branche-de-activite>
+git merge master
+
+# 4. Coder, puis enregistrer et envoyer
+git add <fichier ou chemin complet>
+git commit -m "ActX: message du commit"
+git push
+```
+
+### Activité 1 : Mustapha Letaief
+
+```powershell
+git checkout master
+git pull origin master
+git checkout activite1-ameliorations
+git merge master
+
+# ... modification de MainActivity.java / activity_main.xml ...
+
+git add app/src/main/java/com/example/douane/MainActivity.java app/src/main/res/layout/activity_main.xml
+git commit -m "Act1: amelioration du formulaire"
+git push
+```
+
+### Activité 2 : Melek Gazzeh
+
+```powershell
+git checkout master
+git pull origin master
+git checkout activite2
+git merge master
+
+# Créer une branche de fonctionnalité pour chaque étape
+git checkout -b feature/verification-logic
+
+# ... modification de VerificationActivity.java / activity_verification.xml ...
+
+git add app/src/main/java/com/example/douane/VerificationActivity.java app/src/main/res/layout/activity_verification.xml
+git commit -m "Act2: logique de verification"
+git push -u origin feature/verification-logic
+
+# Fusionner la fonctionnalité dans activite2
+git checkout activite2
+git merge --no-ff feature/verification-logic -m "Fusion de verification-logic dans activite2"
+git push
+```
+
+Même principe pour `feature/verification-layout`, `feature/message-paradoxe` et `feature/suppression-lieu`.
+
+### Activité 3 : Yasmine Yakoudi
+
+```powershell
+git checkout master
+git pull origin master
 git checkout activite3
 git merge master
 
-# Enregistrer et envoyer son travail
-git add <fichier ou chemin complet>
-git commit -m "Act3: message du commit"
-git push
+# ... modification de ResultActivity.java / activity_result.xml ...
 
-# Fusionner son activité dans master (quand elle est prête et compile)
+git add app/src/main/java/com/example/douane/ResultActivity.java app/src/main/res/layout/activity_result.xml
+git commit -m "Act3: affichage du verdict"
+git push
+```
+
+### Fusionner une activité dans `master`
+
+À faire quand l'activité est terminée et que le projet **compile** :
+
+```powershell
 git checkout master
-git merge --no-ff activite3 -m "Fusion de activite3 dans master"
+git pull origin master
+git merge --no-ff <branche-de-activite> -m "Fusion de <branche-de-activite> dans master"
 git push origin master
+
+# Remettre sa branche d'activité au niveau de master
+git checkout <branche-de-activite>
+git merge master
+git push
 ```
 
 ### Bonnes pratiques
 
 1. Travailler sur **sa propre branche**, jamais directement sur `master` pour du code en cours.
 2. Faire des **commits petits et fréquents** (un commit par étape : layout, logique, manifeste...).
-3. Faire un `git pull` avant de recommencer à travailler.
+3. Faire un `git pull origin master` avant de recommencer à travailler.
 4. Ne fusionner dans `master` que si le projet **compile** et fonctionne.
 5. Ne pas fusionner la branche d'un collègue à sa place : le prévenir.
-6. Vérifier avant le rendu que tout est poussé :
+6. Ne pas ajouter `.idea/` aux commits (fichiers propres à chaque PC).
+7. Vérifier avant le rendu que tout est poussé :
    ```powershell
    git log --branches --not --remotes --oneline   # vide = tout est poussé
    git branch -r --no-merged origin/master        # vide = rien en attente

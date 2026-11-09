@@ -54,22 +54,37 @@ Le voyageur du temps arrive au poste de douane :
 
 ## Captures d'écran
 
+Deux scénarios de démonstration illustrent le parcours de l'application.
+
+### Scénario 1
+
 <table>
   <tr>
-    <td align="center"><b>Activité 1</b><br/>Formulaire d'enregistrement</td>
-    <td align="center"><b>Activité 2</b><br/>Passeport / scanner de paradoxe</td>
+    <td align="center"><b>1. Formulaire</b></td>
+    <td align="center"><b>2. Choix du motif</b></td>
+    <td align="center"><b>3. Passeport</b></td>
+    <td align="center"><b>4. Verdict</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/activite1_formulaire.png" width="260" alt="Activité 1 : formulaire"/></td>
-    <td><img src="screenshots/activite2_passeport.png" width="260" alt="Activité 2 : passeport"/></td>
+    <td><img src="screenshots/scenario1.1.png" width="180" alt="Scénario 1 : formulaire"/></td>
+    <td><img src="screenshots/scenario1.2.png" width="180" alt="Scénario 1 : choix du motif"/></td>
+    <td><img src="screenshots/scenario1.3.png" width="180" alt="Scénario 1 : passeport"/></td>
+    <td><img src="screenshots/scenario1.4.png" width="180" alt="Scénario 1 : verdict"/></td>
+  </tr>
+</table>
+
+### Scénario 2
+
+<table>
+  <tr>
+    <td align="center"><b>1. Formulaire</b></td>
+    <td align="center"><b>2. Passeport</b></td>
+    <td align="center"><b>3. Verdict</b></td>
   </tr>
   <tr>
-    <td align="center"><b>Activité 3</b><br/>Voyage approuvé</td>
-    <td align="center"><b>Activité 3</b><br/>Voyage refusé</td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/activite3_approuve.png" width="260" alt="Activité 3 : approuvé"/></td>
-    <td><img src="screenshots/activite3_refuse.png" width="260" alt="Activité 3 : refusé"/></td>
+    <td><img src="screenshots/scenario2.1.png" width="180" alt="Scénario 2 : formulaire"/></td>
+    <td><img src="screenshots/scenario2.2.png" width="180" alt="Scénario 2 : passeport"/></td>
+    <td><img src="screenshots/scenario2.3.png" width="180" alt="Scénario 2 : verdict"/></td>
   </tr>
 </table>
 

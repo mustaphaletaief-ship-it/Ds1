@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bleu_nuit"
+    android:background="@color/vert_nuit"
     android:fillViewport="true">
     <LinearLayout
         android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nom du voyageur"
-                android:textColor="@color/bleu_nuit"
+                android:textColor="@color/vert_nuit"
                 android:textSize="13sp"
                 android:textStyle="bold" />
 
@@ -87,7 +87,7 @@
                 android:paddingEnd="14dp"
                 android:hint="ex: Maria Atta"
                 android:textColorHint="#8A8F9C"
-                android:textColor="@color/bleu_nuit"
+                android:textColor="@color/vert_nuit"
                 android:inputType="textPersonName" />
 
             <!-- Années (naissance et destination) -->
@@ -109,7 +109,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Année de naissance"
-                        android:textColor="@color/bleu_nuit"
+                        android:textColor="@color/vert_nuit"
                         android:textSize="13sp"
                         android:textStyle="bold" />
 
@@ -124,7 +124,7 @@
                         android:paddingEnd="14dp"
                         android:hint="1990"
                         android:textColorHint="#8A8F9C"
-                        android:textColor="@color/bleu_nuit"
+                        android:textColor="@color/vert_nuit"
                         android:inputType="number"
                         android:maxLength="4" />
                 </LinearLayout>
@@ -141,7 +141,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Année destination"
-                        android:textColor="@color/bleu_nuit"
+                        android:textColor="@color/vert_nuit"
                         android:textSize="13sp"
                         android:textStyle="bold" />
 
@@ -156,7 +156,7 @@
                         android:paddingEnd="14dp"
                         android:hint="2050"
                         android:textColorHint="#8A8F9C"
-                        android:textColor="@color/bleu_nuit"
+                        android:textColor="@color/vert_nuit"
                         android:inputType="number"
                         android:maxLength="4" />
                 </LinearLayout>
@@ -168,7 +168,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Motif du voyage"
-                android:textColor="@color/bleu_nuit"
+                android:textColor="@color/vert_nuit"
                 android:textSize="13sp"
                 android:textStyle="bold" />
 
@@ -185,10 +185,10 @@
                     android:minHeight="48dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/bg_option"
-                    android:buttonTint="@color/bleu_nuit"
+                    android:buttonTint="@color/vert_nuit"
                     android:paddingStart="8dp"
                     android:text="Tourisme"
-                    android:textColor="@color/bleu_nuit" />
+                    android:textColor="@color/vert_nuit" />
                 <RadioButton
                     android:id="@+id/rb_modification_ml"
                     android:layout_width="match_parent"
@@ -196,10 +196,10 @@
                     android:minHeight="48dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/bg_option"
-                    android:buttonTint="@color/bleu_nuit"
+                    android:buttonTint="@color/vert_nuit"
                     android:paddingStart="8dp"
                     android:text="Modification du passé"
-                    android:textColor="@color/bleu_nuit" />
+                    android:textColor="@color/vert_nuit" />
                 <RadioButton
                     android:id="@+id/rb_fuite_ml"
                     android:layout_width="match_parent"
@@ -207,10 +207,10 @@
                     android:minHeight="48dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/bg_option"
-                    android:buttonTint="@color/bleu_nuit"
+                    android:buttonTint="@color/vert_nuit"
                     android:paddingStart="8dp"
                     android:text="Fuite"
-                    android:textColor="@color/bleu_nuit" />
+                    android:textColor="@color/vert_nuit" />
             </RadioGroup>
             <!-- Classe : titre + bouton info -->
             <LinearLayout
@@ -226,7 +226,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Classe de voyage"
-                    android:textColor="@color/bleu_nuit"
+                    android:textColor="@color/vert_nuit"
                     android:textSize="13sp"
                     android:textStyle="bold" />
 
@@ -254,9 +254,9 @@
                     android:minHeight="48dp"
                     android:layout_marginEnd="4dp"
                     android:background="@drawable/bg_option"
-                    android:buttonTint="@color/bleu_nuit"
+                    android:buttonTint="@color/vert_nuit"
                     android:text="Éco"
-                    android:textColor="@color/bleu_nuit" />
+                    android:textColor="@color/vert_nuit" />
 
                 <RadioButton
                     android:id="@+id/rb_business_ml"
@@ -267,9 +267,9 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginEnd="4dp"
                     android:background="@drawable/bg_option"
-                    android:buttonTint="@color/bleu_nuit"
+                    android:buttonTint="@color/vert_nuit"
                     android:text="Business"
-                    android:textColor="@color/bleu_nuit" />
+                    android:textColor="@color/vert_nuit" />
 
                 <RadioButton
                     android:id="@+id/rb_premiere_ml"
@@ -279,9 +279,9 @@
                     android:minHeight="48dp"
                     android:layout_marginStart="4dp"
                     android:background="@drawable/bg_option"
-                    android:buttonTint="@color/bleu_nuit"
+                    android:buttonTint="@color/vert_nuit"
                     android:text="Première"
-                    android:textColor="@color/bleu_nuit" />
+                    android:textColor="@color/vert_nuit" />
             </RadioGroup>
             <!-- Bouton (or) -->
             <Button
@@ -293,7 +293,7 @@
                 android:textAllCaps="false"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="@color/bleu_nuit"
+                android:textColor="@color/vert_nuit"
                 android:backgroundTint="@color/or_doux"
                 app:cornerRadius="12dp" />
         </LinearLayout>

@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="bleu_nuit">#1B2A4A</color>
+    <color name="vert_nuit">#073D27</color>
     <color name="or_doux">#C9A227</color>
     <color name="creme">#F6F1E7</color>
     <color name="beige_bord">#D6CDB8</color>
-    <color name="gris_texte">#5B6478</color>
+    <color name="gris_texte">#4A5A50</color>
     <color name="vert_approuve">#1B7A4B</color>
     <color name="rouge_refuse">#B3261E</color>
     <color name="blanc_texte">#FFFFFF</color>
+
+
+    <!-- alwen jdod mta3 charte el passeport el a5dhar -->
+    <color name="vert_passeport">#0B5D3B</color>
+    <color name="encre">#1A2A22</color>
+    <color name="alerte_fond">#FBE9E7</color>
+    <color name="alerte_texte">#8C1D18</color>
 </resources>

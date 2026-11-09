@@ -129,12 +129,11 @@ Toutes les clés des `putExtra` sont **préfixées par les 4 derniers chiffres d
 | Année de destination | `cleAnneeDestination(matricule)` | `ANNEE_DESTINATION` | Act. 1 | Act. 2 | nombre |
 | Motif | `cleMotif(matricule)` | `MOTIF` | Act. 1 | Act. 2 | texte |
 | Classe de voyage *(extra)* | `cleClasse(matricule)` | `CLASSE` | Act. 1 | Act. 2 | texte |
-| Lieu *(extra)* | `cleLieu(matricule)` | `LIEU` | Act. 1 | Act. 2 | texte |
 | Verdict | `cleVerdict(matricule)` | `VERDICT` | Act. 2 | Act. 3 | booléen |
 
-Exemple de clé produite : `1234_NOM_VOYAGEUR` (le matricule est défini par la constante `Cles.MATRICULE`).
+Exemple de clé produite : `0156_NOM_VOYAGEUR` (le matricule est défini par la constante `Cles.MATRICULE`).
 
-> Les champs « classe » et « lieu » sont des **extras facultatifs** de l'Activité 1 ; leur présence dans le formulaire final dépend de l'évolution de la branche `activite1-ameliorations`.
+> Le champ « classe de voyage » est un **extra facultatif** de l'Activité 1. Le champ « lieu », initialement prévu, a été retiré du formulaire et n'est plus transmis.
 
 ---
 

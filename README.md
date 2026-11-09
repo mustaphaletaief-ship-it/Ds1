@@ -232,8 +232,11 @@ Ds1/
 | `master` | Branche principale : version intégrée du projet |
 | `activite1-ameliorations` | Améliorations de l'Activité 1 (design, retrait de champs) |
 | `activite2` | Travail de l'Activité 2 |
+| `feature/suppression-lieu` | Activité 2 : suppression du lieu retiré du formulaire |
 | `feature/verification-layout` | Activité 2 : structure du layout et du passeport |
 | `feature/verification-logic` | Activité 2 : logique (âge, nombre premier, boutons) |
+| `feature/matricule` | Définition du matricule dans `Cles.java` |
+| `feature/message-paradoxe` | Message lié au paradoxe |
 | `activite3` | Travail de l'Activité 3 |
 | `feature/result-layout` | Activité 3 : layout de `ResultActivity` |
 | `feature/result-colors-strings` | Activité 3 : couleurs vert/rouge et textes du verdict |
@@ -241,9 +244,7 @@ Ds1/
 | `feature/result-manifest` | Activité 3 : déclaration de `ResultActivity` dans le manifeste |
 | `feature/result-ids-initiales` | Activité 3 : IDs avec initiales |
 | `feature/result-commentaires-arabizi` | Activité 3 : commentaires de code |
-
----
-
+| `feature/readme-badges` | README : badges (finalement retirés) |
 ## Démarrage rapide
 
 ### Prérequis

@@ -26,11 +26,11 @@ Projet réalisé dans le cadre du mini-projet **DS 1** du cours **Programmation 
 
 ## Équipe
 
-| Nom | Rôle | Activité réalisée |
-|---|---|---|
-| **Mustapha Letaief** | Développeur | **Activité 1** : `MainActivity` (formulaire d'enregistrement) |
-| **Melek Gazzeh** | Développeuse | **Activité 2** : `VerificationActivity` (scanner de paradoxe) |
-| **Yasmine Yakoudi** | Développeuse | **Activité 3** : `ResultActivity` (verdict) |
+| Nom | Groupe | Rôle | Activité réalisée |
+|---|---|---|---|
+| **Mustapha Letaief** | A05 | Développeur | **Activité 1** : `MainActivity` (formulaire d'enregistrement) |
+| **Melek Gazzeh** | A05 | Développeuse | **Activité 2** : `VerificationActivity` (scanner de paradoxe) |
+| **Yasmine Yakoudi** | A07 | Développeuse | **Activité 3** : `ResultActivity` (verdict) |
 
 ---
 

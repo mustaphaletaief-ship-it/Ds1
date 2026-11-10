@@ -26,11 +26,11 @@ Projet réalisé dans le cadre du mini-projet **DS 1** du cours **Programmation 
 
 ## Équipe
 
-| Nom | Groupe | Rôle | Activité réalisée |
-|---|---|---|---|
-| **Mustapha Letaief** | A05 | Développeur | **Activité 1** : `MainActivity` (formulaire d'enregistrement) |
-| **Melek Gazzeh** | A05 | Développeuse | **Activité 2** : `VerificationActivity` (scanner de paradoxe) |
-| **Yasmine Yakoudi** | A07 | Développeuse | **Activité 3** : `ResultActivity` (verdict) |
+| Nom | Rôle | Activité réalisée |
+|---|---|---|
+| **Mustapha Letaief** | Développeur | **Activité 1** : `MainActivity` (formulaire d'enregistrement) |
+| **Melek Gazzeh** | Développeuse | **Activité 2** : `VerificationActivity` (scanner de paradoxe) |
+| **Yasmine Yakoudi** | Développeuse | **Activité 3** : `ResultActivity` (verdict) |
 
 ---
 
@@ -54,7 +54,7 @@ Le voyageur du temps arrive au poste de douane :
 
 ## Captures d'écran
 
-Deux scénarios de démonstration illustrent le parcours de l'application.
+Trois scénarios de démonstration illustrent le parcours de l'application.
 
 ### Scénario 1 : refus automatique (risque de paradoxe)
 
@@ -89,6 +89,23 @@ Le voyageur saisit une naissance en 2005 et une destination en 2050, avec le mot
     <td><img src="screenshots/scenario2.1.png" width="180" alt="Scénario 2 : formulaire"/></td>
     <td><img src="screenshots/scenario2.2.png" width="180" alt="Scénario 2 : passeport"/></td>
     <td><img src="screenshots/scenario2.3.png" width="180" alt="Scénario 2 : verdict"/></td>
+  </tr>
+</table>
+
+### Scénario 3 : voyage approuvé
+
+Le voyageur saisit une naissance en 2005 et une destination en 2039, avec le motif **« Tourisme »** et la classe **Business**. Le passeport affiche un âge temporel de 34 ans et aucun paradoxe n'est détecté : les deux boutons restent actifs. L'agent choisit **« Approuver le saut temporel »** et le verdict s'affiche sur un fond **vert** : « Bon voyage [Nom] ».
+
+<table>
+  <tr>
+    <td align="center"><b>1. Formulaire</b></td>
+    <td align="center"><b>2. Passeport</b></td>
+    <td align="center"><b>3. Verdict</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/scenario3.1.png" width="180" alt="Scénario 3 : formulaire"/></td>
+    <td><img src="screenshots/scenario3.2.png" width="180" alt="Scénario 3 : passeport"/></td>
+    <td><img src="screenshots/scenario3.3.png" width="180" alt="Scénario 3 : verdict"/></td>
   </tr>
 </table>
 
